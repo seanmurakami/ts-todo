@@ -8,7 +8,7 @@ const List = (props: any) => {
         return (
           <div
             key={todo.id}
-            style={todo.isCompleted ? { textDecoration: "line-through" } : {}}
+            className={`todo ${todo.isCompleted ? "complete" : ""}`}
             onClick={() => props.toggle(todo.id)}
           >
             {todo.text}

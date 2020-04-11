@@ -1,0 +1,10 @@
+.complete {
+  color: $secondary;
+  text-decoration: line-through;
+}
+
+.todo {
+  &:hover {
+    cursor: pointer;
+  }
+}
