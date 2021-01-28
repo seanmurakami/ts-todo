@@ -1,4 +1,6 @@
 .complete {
+  background-color: rgb(170, 255, 170);
+  border: 1px solid $secondary;
   color: $secondary;
   text-decoration: line-through;
 }

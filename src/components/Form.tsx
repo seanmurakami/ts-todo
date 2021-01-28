@@ -10,14 +10,14 @@ const Form = (props: any) => {
     const todo: TodoItem = {
       id: count,
       text: text.value,
-      isCompleted: false,
+      isCompleted: false
     };
     onSubmit(todo);
     resetValue();
   };
   return (
     <form onSubmit={addTodo}>
-      <input {...text} />
+      <input {...text} type="text" />
     </form>
   );
 };

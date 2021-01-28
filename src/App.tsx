@@ -12,15 +12,14 @@ function App() {
     setCount(count + 1);
   };
   const toggleCompleted = (id: number) => {
-    const newTodos = todos.map((todo) => {
-      return todo.id === id
-        ? { ...todo, isCompleted: !todo.isCompleted }
-        : todo;
+    const newTodos = todos.map(todo => {
+      return todo.id === id ? { ...todo, isCompleted: !todo.isCompleted } : todo;
     });
     setTodos(newTodos);
   };
   return (
     <div>
+      <h1>My Todos</h1>
       <Form count={count} onSubmit={addTodo} />
       <TodoList todos={todos} toggle={toggleCompleted} />
     </div>
